@@ -3,36 +3,55 @@
     <head>
         <title>Tooltip</title>
         <meta charset='utf-8'>
-        <link rel='stylesheet' href='style.css'>
+        <link rel='stylesheet' href='css/style.css'>
     </head>
     <body>
         
         <div id= 'content'>
-            <div class='imagenes'>
-                <img src="./image/costarica.png" class="costa-rica" alt="" height="100px" width="160px">
-                <img src="./image/elsalvador.png" class="el-salvador" alt="" height="100px" width="160px">
-                <img src="./image/japon.png" class="japon" alt="" height="100px" width="150px">
+            
+            <div class='imagenes clearfix'>
+                <img src="image/costarica.png" id="costa-rica">
+                <img src="image/elsalvador.png" id="el-salvador">
+                <img src="image/japon.png" id="japon">
+                <img src="image/canada.png" id="canada">
+                <img src="image/españa.png" id="españa">
+                <img src="image/brasil.png" id="brasil">
             </div>
-            <div class="tooltip">
+
+
+            <div class="tooltip-text">
 
                 <div id='info-cr'>
-                    <h3 class= 'titulo'>Costa Rica</h3>
                     <span class='descripcion'>Costa Rica es un país de América Central con una geografía accidentada, que incluye bosques tropicales y costas en el Caribe y el Pacífico.
                         Costa Rica es conocida por sus playas, sus volcanes y su biodiversidad. Aproximadamente un cuarto de su área corresponde a selvas protegidas repletas de fauna.</span>
                 </div>
 
                 <div id='info-es'>
-                    <h3 class= 'titulo'>El Salvador</h3>
                     <span class='descripcion'>El Salvador es una pequeña nación de América Central. Es conocida por sus playas en el océano Pacífico, los sitios de surf y el paisaje montañoso.
                         Su Ruta de las Flores es un camino serpenteante que pasa por plantaciones de café, bosques tropicales con cascadas</span>
                 </div>
 
                 <div id='info-jp'>
-                    <h3 class= 'titulo'>Japón</h3>
                     <span class='descripcion'>Japón es una nación insular del océano Pacífico con densas ciudades, palacios imperiales, parques nacionales montañosos y miles de santuarios y templos.</span>
                 </div>
+
+                <div id='info-cd'>
+                    <span class='descripcion'>Canadá es el país norteamericano que se extiende desde los Estados Unidos
+                        en el sur hasta el círculo polar ártico en el norte.</span>
+                </div>
+
+                <div id='info-esp'>
+                    <span class='descripcion'>España, país de la península ibérica de Europa, 
+                        incluye 17 regiones autónomas con diversas características geográficas y culturales.</span>
+                </div>
+
+                <div id='info-br'>
+                    <span class='descripcion'>Brasil es un vasto país de Sudamérica que se extiende desde la Cuenca del Amazonas en el norte hasta los viñedos
+                        y las enormes cataratas del Iguazú en el sur.</span>
+                </div>
+
             </div>
         </div>
-        <script src='script.js'></script>
+        <script src='js/script.js'></script>
     </body>
 </html>

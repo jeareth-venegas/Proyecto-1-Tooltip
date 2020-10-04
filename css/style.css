@@ -1,13 +1,19 @@
 body{
     background-color: gainsboro;
     margin: 0 auto;  padding-top: 100px;
-    width: 960px;
+    width: 500px;
 }
 
+.clearfix::after {   
+    content: "";   
+    clear: both;   
+    display: table; 
+}
 
-.imagenes{
-    text-align: center;
-    margin: 100px;
-    
-    
+.imagenes img {
+    height: 100px;
+    width: 150px;
+    float: left;
+    margin-left: 10px;
+    margin-bottom: 8px;
 }
