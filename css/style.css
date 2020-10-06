@@ -1,8 +1,4 @@
-body{
-    background-color: gainsboro;
-    margin: 0 auto;  padding-top: 100px;
-    width: 500px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap');
 
 .clearfix::after {   
     content: "";   
@@ -10,10 +6,56 @@ body{
     display: table; 
 }
 
-.imagenes img {
+/* general*/
+
+body{
+    background-color:whitesmoke;
+    display: flex;
+    margin: 0 auto;  padding-top: 300px;
+    width: 500px;
+}
+
+.tooltip img {
     height: 100px;
     width: 150px;
     float: left;
     margin-left: 10px;
     margin-bottom: 8px;
+    position: relative;
+}
+
+/*ajustes para cada tooltip*/
+
+/*.tooltip img #costa-rica:hover .tooltip-text #cr*/ 
+
+.tooltip:hover .tooltip-text{
+    display: inline-block;
+}
+
+
+.tooltip-text{
+    text-align: justify;
+    color: white;
+    font-size: 15px;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    background-color: gray;
+    line-height: 20px;
+    display: none;
+    position: absolute;
+    z-index: 1;
+    padding: 5px 10px;
+    border-radius: 5px;
+    left: 0; right: 0;
+    top: 100px;
+}
+
+.tooltip-text::after{
+    content: "";
+    display: line;
+    border-top: 7px solid gray;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    position: absolute;
+    bottom: -7px;
+    left: 43px;
 }
