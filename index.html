@@ -2,30 +2,36 @@
 <html>
     <head>
         <title>Tooltip</title>
-        <meta charset='utf-8'>
-        <link rel='stylesheet' href='css/style.css'>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         
-        <div id= 'content'>
+        <div id="content">
             
-            <div class='tooltip clearfix'>
-                <img src="image/costarica.png" id="costa-rica">
+            <div class="clearfix">
+                <div class="bts">
+                    <a class= "tooltip" href="#img-1"><img src="image/costarica.png"></a>
+                    <span class='tooltip-text cont-1' id="img-1">Costa Rica es un país de América Central con una geografía accidentada, 
+                        que incluye bosques tropicales y costas en el Caribe y el Pacífico.
+                        Costa Rica es conocida por sus playas, sus volcanes y su biodiversidad. 
+                        Aproximadamente un cuarto de su área corresponde a selvas protegidas repletas de fauna.</span>
+                </div>
 
-                <span class='tooltip-text' id="cr">Costa Rica es un país de América Central con una geografía accidentada, que incluye bosques tropicales y costas en el Caribe y el Pacífico.
-                    Costa Rica es conocida por sus playas, sus volcanes y su biodiversidad. Aproximadamente un cuarto de su área corresponde a selvas protegidas repletas de fauna.</span>
+                <div class="bts">
+                    <a class= "tooltip" href="#img-2"><img src="image/elsalvador.png"></a>
+                    <span class='tooltip-text cont-2' id="img-2">El Salvador es una pequeña nación de América Central. 
+                    Es conocida por sus playas en el océano Pacífico, los sitios de surf y el paisaje montañoso.
+                    Su Ruta de las Flores es un camino serpenteante que pasa por plantaciones de café, 
+                    bosques tropicales con cascadas</span>
+                </div>
 
-                <img src="image/elsalvador.png" id="el-salvador">
 
-                <span class='tooltip-text' id="es">El Salvador es una pequeña nación de América Central. Es conocida por sus playas en el océano Pacífico, los sitios de surf y el paisaje montañoso.
-                    Su Ruta de las Flores es un camino serpenteante que pasa por plantaciones de café, bosques tropicales con cascadas</span>
-
-                <img src="image/japon.png" id="japon">
-
-                <span class='tooltip-text' id="jp">Japón es una nación insular del océano Pacífico con densas ciudades, palacios imperiales, parques nacionales montañosos y miles de santuarios y templos.</span>
-
-            </div>
-
+                <div class="bts">
+                    <a class= "tooltip" href="#img-3"><img src="image/japon.png"></a>
+                    <span class='tooltip-text cont-3' id="img-3">Japón es una nación insular del océano Pacífico con densas ciudades, 
+                        palacios imperiales, parques nacionales montañosos y miles de santuarios y templos.</span>
+                </div>
             </div>
         </div>
         <script src='js/script.js'></script>

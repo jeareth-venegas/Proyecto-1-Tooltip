@@ -6,13 +6,17 @@
     display: table; 
 }
 
-/* general*/
+/* global*/
 
 body{
     background-color:whitesmoke;
     display: flex;
     margin: 0 auto;  padding-top: 300px;
     width: 500px;
+}
+
+.bts{
+    float: left;
 }
 
 .tooltip img {
@@ -24,16 +28,10 @@ body{
     position: relative;
 }
 
-/*ajustes para cada tooltip*/
-
-/*.tooltip img #costa-rica:hover .tooltip-text #cr*/ 
-
-.tooltip:hover .tooltip-text{
-    display: inline-block;
-}
-
+/*ajustes para el tooltip tesxt en general*/ 
 
 .tooltip-text{
+    margin: 0px 500px 0px 500px;
     text-align: justify;
     color: white;
     font-size: 15px;
@@ -45,11 +43,13 @@ body{
     z-index: 1;
     padding: 5px 10px;
     border-radius: 5px;
-    left: 0; right: 0;
-    top: 100px;
+    left: 0; right: 0px;
+    top: 200px;
 }
 
-.tooltip-text::after{
+/*ajustes para cada tooltip*/
+
+.cont-1::after{
     content: "";
     display: line;
     border-top: 7px solid gray;
@@ -57,5 +57,40 @@ body{
     border-right: 7px solid transparent;
     position: absolute;
     bottom: -7px;
-    left: 43px;
+    left: 80px;
 }
+
+.cont-2::after{
+    content: "";
+    display: line;
+    border-top: 7px solid gray;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    position: absolute;
+    bottom: -7px;
+    left: 280px;
+}
+
+.cont-3::after{
+    content: "";
+    display: line;
+    border-top: 7px solid gray;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    position: absolute;
+    bottom: -7px;
+    left: 450px;
+}
+
+.cont-2{
+    top: 220px;
+}
+
+.cont-3{
+    top: 240px;
+}
+
+.view{
+    display: block;
+}
+
